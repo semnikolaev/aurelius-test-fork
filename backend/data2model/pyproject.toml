@@ -5,6 +5,7 @@ description = "Backend for data2model"
 authors = ["Aurelius Enterprise <info@aureliusenterprise.com>"]
 license = "UNLICENSED"
 readme = "README.md"
+group = {}
 
 [[tool.poetry.packages]]
 include = "data2model"
@@ -20,11 +21,6 @@ xlrd = "1.2.0"
 [tool.poetry.dependencies.m4i-analytics]
 path = "../../libs/m4i-analytics"
 develop = true
-
-[tool.poetry.group.dev.dependencies]
-ruff = "0.1.5"
-pytest = "7.3.1"
-pytest-sugar = "0.9.7"
 
 [tool.ruff]
 exclude = [".ruff_cache", ".svn", ".tox", ".venv", "dist"]

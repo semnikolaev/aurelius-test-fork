@@ -2,9 +2,10 @@
 name = "m4i-analytics"
 version = "1.0.0"
 description = "Models4Insight Analytics Library"
-authors = []
-license = 'UNLICENSED'
-readme = 'README.md'
+authors = ["Aurelius Enterprise <info@aureliusenterprise.com>"]
+license = "UNLICENSED"
+readme = "README.md"
+group = {}
 
 [[tool.poetry.packages]]
 include = "m4i_analytics"
@@ -25,37 +26,17 @@ sqlparse = "0.3.0"
 uuid = "1.30"
 python-keycloak = "0.18.0"
 
-[tool.poetry.group.dev.dependencies]
-ruff = "0.1.5"
-pytest = "7.3.1"
-pytest-sugar = "0.9.7"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.ruff]
 exclude = [".ruff_cache", ".svn", ".tox", ".venv", "dist"]
-
 line-length = 88
 indent-width = 4
 
 [tool.ruff.lint]
-select = [
-  # pycodestyle
-  "E",
-  # Pyflakes
-  "F",
-  # pyupgrade
-  "UP",
-  # flake8-bugbear
-  "B",
-  # flake8-simplify
-  "SIM",
-  # isort
-  "I",
-]
+select = ["E", "F", "UP", "B", "SIM", "I"]
 ignore = []
-
 fixable = ["ALL"]
 unfixable = []
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

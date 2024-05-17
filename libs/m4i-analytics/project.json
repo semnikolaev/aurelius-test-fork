@@ -5,13 +5,6 @@
   "sourceRoot": "{projectRoot}/m4i_analytics",
   "tags": [],
   "targets": {
-    "lock": {
-      "executor": "@nxlv/python:run-commands",
-      "options": {
-        "command": "poetry lock --no-update",
-        "cwd": "{projectRoot}"
-      }
-    },
     "add": {
       "executor": "@nxlv/python:add",
       "options": {}
@@ -34,16 +27,6 @@
         "publish": false,
         "lockedVersions": true,
         "bundleLocalDependencies": true
-      }
-    },
-    "install": {
-      "executor": "@nxlv/python:install",
-      "options": {
-        "silent": false,
-        "args": "",
-        "cacheDir": ".cache/pypoetry",
-        "verbose": false,
-        "debug": false
       }
     },
     "lint": {
