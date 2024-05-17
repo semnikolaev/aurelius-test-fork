@@ -12,6 +12,10 @@ include = "data2model"
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
 
+[tool.poetry.dependencies.m4i-analytics]
+path = "../../libs/m4i-analytics"
+develop = true
+
 [tool.poetry.group.dev.dependencies]
 ruff = "0.1.5"
 pytest = "7.3.1"

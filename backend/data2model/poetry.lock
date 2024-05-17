@@ -37,6 +37,19 @@ files = [
 ]
 
 [[package]]
+name = "m4i-analytics"
+version = "1.0.0"
+description = "Models4Insight Analytics Library"
+optional = false
+python-versions = ">=3.9,<3.13"
+files = []
+develop = true
+
+[package.source]
+type = "directory"
+url = "../../libs/m4i-analytics"
+
+[[package]]
 name = "packaging"
 version = "24.0"
 description = "Core utilities for Python packages"
@@ -157,4 +170,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.13"
-content-hash = "d0006eaac250bd59ac9d15fe1b10776e4478fd3c9cc95c2c094ec7488d3a1133"
+content-hash = "8a9c82ca8a1a16ee875fd3e38ef94208de4fa5bb8e3af93bc028f893a0e32355"
