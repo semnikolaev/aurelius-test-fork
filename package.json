@@ -1,0 +1,13 @@
+{
+  "name": "@aurelius/source",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "scripts": {},
+  "private": true,
+  "devDependencies": {
+    "@nx/js": "19.0.4",
+    "@nx/workspace": "19.0.4",
+    "@nxlv/python": "^18.1.0",
+    "nx": "19.0.4"
+  }
+}
