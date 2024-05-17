@@ -8,10 +8,10 @@ readme = "README.md"
 group = {}
 
 [[tool.poetry.packages]]
-include = "data2model"
+include = "m4i_data2model"
 
 [tool.poetry.dependencies]
-python = ">=3.7,<3.13"
+python = "~3.8"
 bokeh = "1.4.0"
 flask = "1.1.1"
 numpy = "1.18.1"
@@ -20,6 +20,14 @@ xlrd = "1.2.0"
 
 [tool.poetry.dependencies.m4i-analytics]
 path = "../../libs/m4i-analytics"
+develop = true
+
+[tool.poetry.dependencies.m4i-backend-core]
+path = "../../libs/m4i-backend-core"
+develop = true
+
+[tool.poetry.dependencies.m4i-graphviz-layouts]
+path = "../../libs/m4i-analytics-extensions/m4i-graphviz-layouts"
 develop = true
 
 [tool.ruff]

@@ -1,9 +1,8 @@
 {
-  "name": "data2model",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "{projectRoot}/data2model",
-  "tags": [],
+  "name": "m4i-graphviz-layouts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/m4i-analytics-extensions/m4i_graphviz_layouts",
   "targets": {
     "add": {
       "executor": "@nxlv/python:add",
@@ -20,10 +19,10 @@
     "build": {
       "executor": "@nxlv/python:build",
       "outputs": [
-        "{workspaceRoot}/dist/backend/data2model"
+        "{projectRoot}/dist"
       ],
       "options": {
-        "outputPath": "{workspaceRoot}/dist/backend/data2model",
+        "outputPath": "libs/m4i-analytics-extensions/dist",
         "publish": false,
         "lockedVersions": true,
         "bundleLocalDependencies": true
@@ -34,7 +33,7 @@
       "outputs": [],
       "options": {
         "lintFilePatterns": [
-          "data2model",
+          "m4i_graphviz_layouts",
           "tests"
         ]
       }
@@ -42,13 +41,14 @@
     "test": {
       "executor": "@nxlv/python:run-commands",
       "outputs": [
-        "{workspaceRoot}/reports/{projectRoot}/unittests",
-        "{workspaceRoot}/coverage/{projectRoot}"
+        "{workspaceRoot}/reports/libs/m4i-analytics-extensions/unittests",
+        "{workspaceRoot}/coverage/libs/m4i-analytics-extensions"
       ],
       "options": {
         "command": "poetry run pytest tests/",
-        "cwd": "{projectRoot}"
+        "cwd": "libs/m4i-analytics-extensions"
       }
     }
-  }
+  },
+  "tags": []
 }
