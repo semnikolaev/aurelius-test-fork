@@ -442,6 +442,7 @@ develop = true
 [package.dependencies]
 future = "0.18.2"
 graphviz = "0.13.2"
+m4i-analytics = {path = "../../m4i-analytics", develop = true}
 pydotplus = "2.0.2"
 
 [package.source]
