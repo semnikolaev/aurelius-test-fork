@@ -3,14 +3,19 @@ name = "data2model"
 version = "1.0.0"
 description = "Backend for data2model"
 authors = ["Aurelius Enterprise <info@aureliusenterprise.com>"]
-license = 'UNLICENSED'
-readme = 'README.md'
+license = "UNLICENSED"
+readme = "README.md"
 
 [[tool.poetry.packages]]
 include = "data2model"
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.13"
+python = ">=3.7,<3.13"
+bokeh = "1.4.0"
+flask = "1.1.1"
+numpy = "1.18.1"
+pandas = "1.0.0"
+xlrd = "1.2.0"
 
 [tool.poetry.dependencies.m4i-analytics]
 path = "../../libs/m4i-analytics"
@@ -21,32 +26,17 @@ ruff = "0.1.5"
 pytest = "7.3.1"
 pytest-sugar = "0.9.7"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.ruff]
 exclude = [".ruff_cache", ".svn", ".tox", ".venv", "dist"]
-
 line-length = 88
 indent-width = 4
 
 [tool.ruff.lint]
-select = [
-  # pycodestyle
-  "E",
-  # Pyflakes
-  "F",
-  # pyupgrade
-  "UP",
-  # flake8-bugbear
-  "B",
-  # flake8-simplify
-  "SIM",
-  # isort
-  "I",
-]
+select = ["E", "F", "UP", "B", "SIM", "I"]
 ignore = []
-
 fixable = ["ALL"]
 unfixable = []
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
